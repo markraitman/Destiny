@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="J42-QH-saX">
             <objects>
-                <viewController id="gCn-Vo-RI6" customClass="ViewController" customModule="Destini_iOS13" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gCn-Vo-RI6" customClass="ViewController" customModule="Destiny" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ID5-D6-SHp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

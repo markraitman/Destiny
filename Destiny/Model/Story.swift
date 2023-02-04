@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+struct Story {
+    var title: String
+    var choices: [String]
+    
+    init(title: String, choices: [String]) {
+        self.title = title
+        self.choices = choices
+    }
+    
+}
