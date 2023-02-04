@@ -12,19 +12,19 @@ class ViewController: UIViewController {
     //MARK: Properties
     
     let stories = [
-        Story(title: "You see a fork in the road", choices: ["Take a left", "Take a right"]),
-        Story(title: "You see a tiger", choices: ["Shout for help", "Play dead"]),
-        Story(title: "You find a treasure chest", choices: ["Open it", "Check for traps"])
+        Story(title: "You see a fork in the road", choice1: "Take a left", choice2: "Take a right"),
+        Story(title: "You see a tiger", choice1: "Shout for help", choice2: "Play dead"),
+        Story(title: "You find a treasure chest", choice1: "Open it", choice2: "Check for traps")
     ]
     
-    var questionNumber = 0
+    var storyNumber = 0
 
     //MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         storyLabel.text = stories[0].title
-        choice1Button.setTitle(getAnswers()[0], for: .normal)
-        choice2Button.setTitle(getAnswers()[1], for: .normal)
+        choice1Button.setTitle(getChoice1(), for: .normal)
+        choice2Button.setTitle(getChoice2(), for: .normal)
         
     }
     
@@ -44,8 +44,16 @@ class ViewController: UIViewController {
     }
     
     //MARK: Methods
-    func getAnswers() -> [String] {
-        return stories[questionNumber].choices
+    func getChoice1() -> String {
+        return stories[storyNumber].choice1
         }
+    
+    func getChoice2() -> String {
+        return stories[storyNumber].choice2
+        }
+    
+    func getStoryTitle() -> String {
+        return stories[storyNumber].title
+    }
 }
 

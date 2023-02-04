@@ -9,11 +9,13 @@ import Foundation
 
 struct Story {
     var title: String
-    var choices: [String]
+    var choice1: String
+    var choice2: String
     
-    init(title: String, choices: [String]) {
+    init(title: String, choice1: String, choice2: String) {
         self.title = title
-        self.choices = choices
+        self.choice1 = choice1
+        self.choice2 = choice2
     }
     
 }
